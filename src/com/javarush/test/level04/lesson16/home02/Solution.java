@@ -9,9 +9,9 @@ import java.io.InputStreamReader;
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)   throws Exception
     {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String tmp = reader.readLine();
 
         int one = Integer.parseInt(tmp);
@@ -24,31 +24,30 @@ public class Solution
 
         int three = Integer.parseInt(tmp);
 
-        if (max(max(one, two), three) == one)
-        {
-            if (min(two, three) == two) System.out.println(three);
+        if (max(max(one, two), three) == one){
+            if (min(two, three)==two) System.out.println(three);
             else System.out.println(two);
-        } else if (max(max(one, two), three) == two)
-        {
-            if (min(three, one) == two) System.out.println(one);
+        }
+
+        else if (max(max(one, two), three) == two){
+            if (min(three, one)==two) System.out.println(one);
             else System.out.println(three);
-        } else if (max(max(one, two), three) == three)
-        {
-            if (min(two, one) == two) System.out.println(one);
+        }
+
+        else if (max(max(one, two), three) == three){
+            if (min(two, one)==two) System.out.println(one);
             else System.out.println(two);
         }
 
     }
 
-    public static int min(int a, int b)
-    {
+    public static int min (int a, int b){
         if (a <= b) return a;
         return b;
     }
 
-    public static int max(int a, int b)
-    {
-        if (a >= b) return a;
+    public static int max (int a, int b){
+        if (a>=b) return a;
         return b;
     }
 }

@@ -11,11 +11,11 @@ import java.io.InputStreamReader;
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)   throws Exception
     {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String tmp = reader.readLine();
         int i = Integer.parseInt(tmp);
-        System.out.println("Я буду зарабатывать $" + i + " в час");
+        System.out.println("Я буду зарабатывать $"+i+" в час");
     }
 }

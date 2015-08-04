@@ -9,18 +9,17 @@ import java.io.InputStreamReader;
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)   throws Exception
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String str = "";
-        int summa = 0;
+        int summa=0;
 
-        while (!str.equals("-1"))
-        {
+        while (!str.equals("-1")){
             str = reader.readLine();
-            int chislo = Integer.parseInt(str);
-            summa += chislo;
+            int chislo  = Integer.parseInt(str);
+            summa+=chislo;
         }
 
         System.out.println(summa);

@@ -16,12 +16,12 @@ import java.io.InputStreamReader;
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)   throws Exception
     {
         //Напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String name = reader.readLine();
+        String name  = reader.readLine();
 
         String tmp = reader.readLine();
         int y = Integer.parseInt(tmp);
@@ -32,7 +32,7 @@ public class Solution
         tmp = reader.readLine();
         int d = Integer.parseInt(tmp);
 
-        System.out.println("Меня зовут " + name);
-        System.out.println("Я родился " + d + "." + m + "." + y);
+        System.out.println("Меня зовут "+name);
+        System.out.println("Я родился "+d+"."+m+"."+y);
     }
 }
